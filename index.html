@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Pulse</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Live local discovery</p>
+        <h1>Find your city’s next big moments</h1>
+        <p class="subtitle">
+          Enter any city to explore upcoming events, local announcements, and the latest news in one place.
+        </p>
+        <form id="city-form" class="search-box">
+          <input id="city-input" type="text" placeholder="Try New York, London, Tokyo..." aria-label="City name" />
+          <button type="submit">Explore</button>
+        </form>
+        <p class="hint">Popular cities: New York, London, Tokyo, Sydney</p>
+      </div>
+    </div>
+
+    <main class="dashboard">
+      <section class="card overview">
+        <p class="section-label">City overview</p>
+        <h2 id="city-name">Select a city</h2>
+        <p id="city-summary">Type a city above to see an overview and discover what is happening nearby.</p>
+        <p id="status-message" class="status">Loading live city updates…</p>
+      </section>
+
+      <section class="card">
+        <div class="section-head">
+          <p class="section-label">Upcoming events</p>
+          <h3>What is happening soon</h3>
+        </div>
+        <div id="events-list" class="card-list"></div>
+      </section>
+
+      <section class="card">
+        <div class="section-head">
+          <p class="section-label">Latest news</p>
+          <h3>Fresh city headlines</h3>
+        </div>
+        <div id="news-list" class="card-list"></div>
+      </section>
+    </main>
+
+    <script src="Weather.js"></script>
+  </body>
+</html>
